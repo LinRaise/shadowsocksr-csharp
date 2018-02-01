@@ -19,6 +19,33 @@ namespace Shadowsocks.Util
 {
     public class Utils
     {
+        private static string _tempPath = null;
+
+        // return path to store temporary files
+        public static string GetTempPath()
+        {
+            if (_tempPath == null)
+            {
+                try
+                {
+                    Directory.CreateDirectory(Path.Combine(Application.StartupPath, "ss_win_temp"));
+                    // don't use "/", it will fail when we call explorer /select xxx/ss_win_temp\xxx.log
+                    _tempPath = Path.Combine(Application.StartupPath, "ss_win_temp");
+                }
+                catch (Exception e)
+                {
+                    throw;
+                }
+            }
+            return _tempPath;
+        }
+
+        // return a full path with filename combined which pointed to the temporary directory
+        public static string GetTempPath(string filename)
+        {
+            return Path.Combine(GetTempPath(), filename);
+        }
+
         private delegate IPHostEntry GetHostEntryHandler(string ip);
 
         private static LRUCache<string, IPAddress> dnsBuffer = new LRUCache<string, IPAddress>();

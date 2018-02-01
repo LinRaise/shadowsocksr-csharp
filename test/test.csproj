@@ -51,12 +51,6 @@
     <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\shadowsocks-csharp\shadowsocks-csharp.csproj">
-      <Project>{8c02d2f7-7cdb-4d55-9f25-cd03ef4aa062}</Project>
-      <Name>shadowsocks-csharp</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

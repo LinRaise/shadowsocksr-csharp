@@ -74,21 +74,7 @@ namespace Shadowsocks
                     }
                     try_times += 1;
                 }
-
-                Configuration config = Configuration.Load();
-                if (config != null)
-                {
-                    config.proxyEnable = Convert.ToBoolean(SystemProxy.RegistryGetValue("ProxyEnable", 0));
-                    string s = SystemProxy.RegistryGetValue("ProxyServer", "").ToString();
-                    string[] arr = s.Split(':');
-                    if (arr.Length == 2)
-                    {
-                        config.proxyHost = arr[0];
-                        //config.localPort = Convert.ToInt32(arr[1]);
-                        config.proxyPort = Convert.ToInt32(arr[1]);
-                    }
-                    Configuration.Save(config); // save to file
-                }
+                
 #endif
                 _controller = new ShadowsocksController();
                 HostMap.Instance().LoadHostFile();
@@ -157,12 +143,15 @@ namespace Shadowsocks
 
         private static void Application_ApplicationExit(object sender, EventArgs e)
         {
-            if (_controller != null) _controller.Stop();
-            _controller = null;
-#if !_CONSOLE
-            Configuration config = Configuration.Load();
-            WinINet.SetIEProxy(config.proxyEnable, config.proxyEnable, $"{config.proxyHost}:{config.proxyPort}", "");
-#endif
+            Application.ApplicationExit -= Application_ApplicationExit;
+            SystemEvents.PowerModeChanged -= SystemEvents_PowerModeChanged;
+            
+            if (_controller != null)
+            {
+                _controller.Stop();
+                _controller = null;
+            }
+            
         }
 
         private static int exited = 0;

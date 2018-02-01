@@ -8,6 +8,7 @@ using System.IO;
 using Shadowsocks.Model;
 
 using System.ComponentModel;
+using Shadowsocks.Util.SystemProxy;
 
 namespace Shadowsocks.Controller
 {
@@ -546,68 +547,24 @@ namespace Shadowsocks.Controller
             }
             bool global = sysProxyMode == (int)ProxyMode.Global;
             bool enabled = sysProxyMode != (int)ProxyMode.Direct;
-            //Version win8 = new Version("6.2");
-            //if (Environment.OSVersion.Version.CompareTo(win8) < 0)
-            //{
-            //    using (RegistryKey registry = OpenUserRegKey(@"Software\Microsoft\Windows\CurrentVersion\Internet Settings", true))
-            //    {
-            //        try
-            //        {
-            //            if (enabled)
-            //            {
-            //                if (global)
-            //                {
-            //                    RegistrySetValue(registry, "ProxyEnable", 1);
-            //                    RegistrySetValue(registry, "ProxyServer", "127.0.0.1:" + config.localPort.ToString());
-            //                    RegistrySetValue(registry, "AutoConfigURL", "");
-            //                }
-            //                else
-            //                {
-            //                    string pacUrl;
-            //                    pacUrl = "http://127.0.0.1:" + config.localPort.ToString() + "/pac?" + "auth=" + config.localAuthPassword + "&t=" + Util.Utils.GetTimestamp(DateTime.Now);
-            //                    RegistrySetValue(registry, "ProxyEnable", 0);
-            //                    RegistrySetValue(registry, "ProxyServer", "");
-            //                    RegistrySetValue(registry, "AutoConfigURL", pacUrl);
-            //                }
-            //            }
-            //            else
-            //            {
-            //                RegistrySetValue(registry, "ProxyEnable", 0);
-            //                RegistrySetValue(registry, "ProxyServer", "");
-            //                RegistrySetValue(registry, "AutoConfigURL", "");
-            //            }
-            //            IEProxyUpdate(config, sysProxyMode);
-            //            SystemProxy.NotifyIE();
-            //            //Must Notify IE first, or the connections do not chanage
-            //            CopyProxySettingFromLan();
-            //        }
-            //        catch (Exception e)
-            //        {
-            //            Logging.LogUsefulException(e);
-            //            // TODO this should be moved into views
-            //            //MessageBox.Show(I18N.GetString("Failed to update registry"));
-            //        }
-            //    }
-            //}
-            //if (Environment.OSVersion.Version.CompareTo(win8) >= 0)
-            //{
+            
             try
             {
                 if (enabled)//sysProxyMode != (int)ProxyMode.Direct,global & pac
                 {
                     string pacUrl = $"http://127.0.0.1:{config.localPort}/pac?auth={config.localAuthPassword}&t={Util.Utils.GetTimestamp(DateTime.Now)}";
-                    WinINet.SetIEProxy(enabled, global, $"127.0.0.1:{config.localPort}", pacUrl);
+                    Sysproxy.SetIEProxy(enabled, global, $"127.0.0.1:{config.localPort}", pacUrl);
                 }
                 else
                 {
-                    WinINet.SetIEProxy(config.proxyEnable, config.proxyEnable, $"{config.proxyHost}:{config.proxyPort}", "");
+                    Sysproxy.SetIEProxy(false, false, null, null);
+                    //Sysproxy.SetIEProxy(config.proxyEnable, config.proxyEnable, $"{config.proxyHost}:{config.proxyPort}", "");
                 }
             }
             catch (Exception ex)
             {
                 Logging.LogUsefulException(ex);
             }
-            //}
         }
 
         private static void CopyProxySettingFromLan()
