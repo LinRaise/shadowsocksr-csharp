@@ -263,7 +263,7 @@ namespace Shadowsocks.View
                 Bitmap ngnl = Resources.ngnl;
                 g.DrawImage(ngnl, new Rectangle(0, 0, width, width));
                 if (!_modifiedConfiguration.isHideTips)
-                    g.DrawString("Click the 'Link' text box", new Font("Arial", 14), new SolidBrush(Color.Black), new RectangleF(0, 0, 300, 300));
+                    g.DrawString(I18N.GetString("Click the 'Link' text box"), new Font("Arial", 10), new SolidBrush(Color.Black), new RectangleF(0, 0, 300, 300));
             }
             PictureQRcode.Image = drawArea;
         }
