@@ -28,9 +28,13 @@ namespace Shadowsocks.Util
             {
                 try
                 {
-                    Directory.CreateDirectory(Path.Combine(Application.StartupPath, "ss_win_temp"));
+                    string _path = Path.Combine(Application.StartupPath, "temp");
+                    if(!Directory.Exists(_path))
+                    {
+                        Directory.CreateDirectory(_path);
+                    }
                     // don't use "/", it will fail when we call explorer /select xxx/ss_win_temp\xxx.log
-                    _tempPath = Path.Combine(Application.StartupPath, "ss_win_temp");
+                    _tempPath = _path;
                 }
                 catch (Exception e)
                 {
