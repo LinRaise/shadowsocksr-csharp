@@ -489,6 +489,10 @@ namespace Shadowsocks.View
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            if (ServersListBox.SelectedIndex < 0)
+            {
+                return;
+            }
             _oldSelectedIndex = ServersListBox.SelectedIndex;
             var items = ServersListBox.SelectedIndices;
             if (items.Count > 0)
@@ -517,7 +521,10 @@ namespace Shadowsocks.View
             {
                 _oldSelectedIndex = 0;
             }
-            ServersListBox.SelectedIndex = _oldSelectedIndex;
+            if (_oldSelectedIndex < _modifiedConfiguration.configs.Count)
+            {
+                ServersListBox.SelectedIndex = _oldSelectedIndex;
+            }
             LoadConfiguration(_modifiedConfiguration);
             SetServerListSelectedIndex(_oldSelectedIndex);
             LoadSelectedServer();
