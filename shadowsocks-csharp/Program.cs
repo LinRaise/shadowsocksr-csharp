@@ -8,6 +8,7 @@ using System.Threading;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using Shadowsocks.Model;
+using Shadowsocks.Util;
 #if !_CONSOLE
 using Shadowsocks.View;
 #endif
@@ -78,6 +79,8 @@ namespace Shadowsocks
 #endif
                 _controller = new ShadowsocksController();
                 HostMap.Instance().LoadHostFile();
+
+                UpdateUrl.Instance().Load();
 #if !_CONSOLE
                 _viewController = new MenuViewController(_controller);
 #endif

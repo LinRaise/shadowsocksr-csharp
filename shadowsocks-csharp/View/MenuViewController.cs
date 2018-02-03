@@ -15,6 +15,7 @@ using ZXing.Common;
 using ZXing.QrCode;
 using System.Threading;
 using System.Text.RegularExpressions;
+using Shadowsocks.Util;
 
 namespace Shadowsocks.View
 {
@@ -917,12 +918,12 @@ namespace Shadowsocks.View
 
         private void OpenWiki_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/breakwa11/shadowsocks-rss/wiki");
+            Process.Start(UpdateUrl.URLConfig.WikiURL);
         }
 
         private void FeedbackItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/shadowsocksr/shadowsocksr-csharp/issues/new");
+            Process.Start(UpdateUrl.URLConfig.FeedbackURL);
         }
 
         private void ResetPasswordItem_Click(object sender, EventArgs e)
@@ -934,7 +935,7 @@ namespace Shadowsocks.View
 
         private void AboutItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://breakwa11.github.io");
+            Process.Start(UpdateUrl.URLConfig.ProjectURL);
         }
 
         private void DonateItem_Click(object sender, EventArgs e)
@@ -1059,22 +1060,22 @@ namespace Shadowsocks.View
 
         private void UpdatePACFromLanIPListItem_Click(object sender, EventArgs e)
         {
-            controller.UpdatePACFromOnlinePac("https://raw.githubusercontent.com/breakwa11/breakwa11.github.io/master/ssr/ss_lanip.pac");
+            controller.UpdatePACFromOnlinePac(UpdateUrl.URLConfig.PACFromLanIPListURL);
         }
 
         private void UpdatePACFromCNWhiteListItem_Click(object sender, EventArgs e)
         {
-            controller.UpdatePACFromOnlinePac("https://raw.githubusercontent.com/breakwa11/breakwa11.github.io/master/ssr/ss_white.pac");
+            controller.UpdatePACFromOnlinePac(UpdateUrl.URLConfig.PACFromCNWhiteListURL);
         }
 
         private void UpdatePACFromCNOnlyListItem_Click(object sender, EventArgs e)
         {
-            controller.UpdatePACFromOnlinePac("https://raw.githubusercontent.com/breakwa11/breakwa11.github.io/master/ssr/ss_white_r.pac");
+            controller.UpdatePACFromOnlinePac(UpdateUrl.URLConfig.PACFromCNOnlyListURL);
         }
 
         private void UpdatePACFromCNIPListItem_Click(object sender, EventArgs e)
         {
-            controller.UpdatePACFromOnlinePac("https://raw.githubusercontent.com/breakwa11/breakwa11.github.io/master/ssr/ss_cnip.pac");
+            controller.UpdatePACFromOnlinePac(UpdateUrl.URLConfig.PACFromCNIPListURL);
         }
 
         private void EditUserRuleFileForGFWListItem_Click(object sender, EventArgs e)
