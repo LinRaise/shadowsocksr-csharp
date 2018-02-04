@@ -51,8 +51,8 @@ namespace Shadowsocks.Controller
 
         // when user clicked Edit PAC, and PAC file has already created
         public event EventHandler<PathEventArgs> PACFileReadyToOpen;
-        public event EventHandler<PathEventArgs> UserRuleFileReadyToOpen;
-
+        public event EventHandler<PathEventArgs> PacUserRuleFileReadyToOpen;
+        public event EventHandler<PathEventArgs> CustomUserRuleFileReadyToOpen; 
         public event EventHandler<GFWListUpdater.ResultEventArgs> UpdatePACFromGFWListCompleted;
 
         public event ErrorEventHandler UpdatePACFromGFWListError;
@@ -334,12 +334,20 @@ namespace Shadowsocks.Controller
             }
         }
 
-        public void TouchUserRuleFile()
+        public void ExplorePacUserRuleFile()
         {
-            string userRuleFilename = _pacServer.TouchUserRuleFile();
-            if (UserRuleFileReadyToOpen != null)
+            string pacUserRuleFilename = _pacServer.GetPacUserRuleFile();
+            if (PacUserRuleFileReadyToOpen != null)
             {
-                UserRuleFileReadyToOpen(this, new PathEventArgs() { Path = userRuleFilename });
+                PacUserRuleFileReadyToOpen(this, new PathEventArgs() { Path = pacUserRuleFilename });
+            }
+        }
+        public void ExploreCustomUserRuleFile()
+        {
+            string customUserRuleFilename = HostMap.Instance().GetCustomUserRuleFile();
+            if (CustomUserRuleFileReadyToOpen != null)
+            {
+                CustomUserRuleFileReadyToOpen(this, new PathEventArgs() { Path = customUserRuleFilename });
             }
         }
 

@@ -61,34 +61,27 @@ namespace Shadowsocks.Properties {
         }
         
         /// <summary>
-        ///   查找类似 # translation for Simplified Chinese
+        ///   查找类似 # A line which start with &quot;#&quot; is comment
+        ///# The new one will overwrite the same item before
+        ///# &quot;a.com&quot; means &quot;a.com&quot; only, &quot;*.a.com&quot; means all sub domains of &quot;a.com&quot; only, &quot;.a.com&quot; means &quot;*.a.com&quot; &amp; &quot;a.com&quot;
         ///
-        ///Shadowsocks=Shadowsocks
+        ///# remote proxy: transfer with server
         ///
-        ///# Menu items
-        ///
-        ///Mode=系统代理模式
-        ///No modify system proxy=保持当前状态不修改
-        ///Disable system proxy=直连模式
-        ///PAC=PAC 模式
-        ///Global=全局模式
-        ///Proxy rule=代理规则
-        ///Bypass LAN=绕过局域网
-        ///Bypass LAN &amp;&amp; China=绕过局域网和大陆
-        ///Bypass LAN &amp;&amp; not China=绕过局域网和非大陆
-        ///User custom=用户自定义
-        ///Disable bypass=全局
-        ///Servers=服务器
-        ///Edit servers...=编辑服务器...
-        ///Import servers from file...=从文件导入服务器...
-        ///Servers Subscribe=服务器订阅
-        ///Subscribe setting...=SSR服务器订阅设置...
-        ///Update subscribe SSR node=更新SSR服务器订阅
-        ///Update subscr [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///.0rz.tw remoteproxy
+        ///.0to255.com remoteproxy
+        ///.1-apple.com.tw remoteproxy
+        ///.10musume.com remoteproxy
+        ///.123rf.com remoteproxy
+        ///.12bet.com remoteproxy
+        ///.12vpn.com remoteproxy
+        ///.141hongkong.com remoteproxy
+        ///.173ng.com remoteproxy
+        ///.1984bbs.com remoteproxy
+        ///.1984bbs.org remoteproxy [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
-        internal static string cn {
+        internal static string custom_user_rule {
             get {
-                return ResourceManager.GetString("cn", resourceCulture);
+                return ResourceManager.GetString("custom_user_rule", resourceCulture);
             }
         }
         
@@ -133,14 +126,23 @@ namespace Shadowsocks.Properties {
         }
         
         /// <summary>
+        ///   查找类似 ! Put user rules line by line in this file.
+        ///! See https://adblockplus.org/en/filter-cheatsheet
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string pac_user_rule {
+            get {
+                return ResourceManager.GetString("pac_user_rule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 listen-address __PRIVOXY_BIND_IP__:__PRIVOXY_BIND_PORT__
         ///show-on-task-bar 0
         ///activity-animation 0
         ///forward-socks5 / 127.0.0.1:__SOCKS_PORT__ .
         ///hide-console
-        ///__BYPASS_ACTION__
-        ///
-        /// 的本地化字符串。
+        ///__BYPASS_ACTION__ 的本地化字符串。
         /// </summary>
         internal static string privoxy_conf {
             get {
@@ -229,13 +231,34 @@ namespace Shadowsocks.Properties {
         }
         
         /// <summary>
-        ///   查找类似 ! Put user rules line by line in this file.
-        ///! See https://adblockplus.org/en/filter-cheatsheet
-        /// 的本地化字符串。
+        ///   查找类似 # translation for Simplified Chinese
+        ///
+        ///Shadowsocks=Shadowsocks
+        ///
+        ///# Menu items
+        ///
+        ///Mode=系统代理模式
+        ///No modify system proxy=保持当前状态不修改
+        ///Disable system proxy=直连模式
+        ///PAC=PAC 模式
+        ///Global=全局模式
+        ///Proxy rule=代理规则
+        ///Bypass LAN=绕过局域网
+        ///Bypass LAN &amp;&amp; China=绕过局域网和大陆
+        ///Bypass LAN &amp;&amp; not China=绕过局域网和非大陆
+        ///User custom=用户自定义
+        ///Edit user custom rule...=编辑用户自定义规则
+        ///Disable bypass=全局
+        ///Servers=服务器
+        ///Edit servers...=编辑服务器...
+        ///Import servers from file...=从文件导入服务器...
+        ///Servers Subscribe=服务器订阅
+        ///Subscribe setting...=SSR服务器订阅设置...
+        ///Update subscrib [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
-        internal static string user_rule {
+        internal static string zh_cn {
             get {
-                return ResourceManager.GetString("user_rule", resourceCulture);
+                return ResourceManager.GetString("zh_cn", resourceCulture);
             }
         }
         

@@ -69,7 +69,8 @@ namespace Shadowsocks.View
             controller.ToggleRuleModeChanged += controller_ToggleRuleModeChanged;
             controller.ConfigChanged += controller_ConfigChanged;
             controller.PACFileReadyToOpen += controller_FileReadyToOpen;
-            controller.UserRuleFileReadyToOpen += controller_FileReadyToOpen;
+            controller.PacUserRuleFileReadyToOpen += controller_FileReadyToOpen;
+            controller.CustomUserRuleFileReadyToOpen += controller_FileReadyToOpen;
             controller.Errored += controller_Errored;
             controller.UpdatePACFromGFWListCompleted += controller_UpdatePACFromGFWListCompleted;
             controller.UpdatePACFromGFWListError += controller_UpdatePACFromGFWListError;
@@ -247,6 +248,8 @@ namespace Shadowsocks.View
                     ruleBypassChina = CreateMenuItem("Bypass LAN && China", new EventHandler(this.RuleBypassChinaItem_Click)),
                     ruleBypassNotChina = CreateMenuItem("Bypass LAN && not China", new EventHandler(this.RuleBypassNotChinaItem_Click)),
                     ruleUser = CreateMenuItem("User custom", new EventHandler(this.RuleUserItem_Click)),
+                    new MenuItem("-"),
+                    CreateMenuItem("Edit user custom rule...", new EventHandler(this.EditUserCustomRuleFile_Click)),
                     new MenuItem("-"),
                     ruleDisableBypass = CreateMenuItem("Disable bypass", new EventHandler(this.RuleBypassDisableItem_Click)),
                 }),
@@ -1080,9 +1083,13 @@ namespace Shadowsocks.View
 
         private void EditUserRuleFileForGFWListItem_Click(object sender, EventArgs e)
         {
-            controller.TouchUserRuleFile();
+            controller.ExplorePacUserRuleFile();
         }
-
+        private void EditUserCustomRuleFile_Click(object sender, EventArgs e)
+        {
+            controller.ExploreCustomUserRuleFile();
+        }
+        
         private void AServerItem_Click(object sender, EventArgs e)
         {
             MenuItem item = (MenuItem)sender;

@@ -37,7 +37,7 @@ namespace Shadowsocks.Controller
             {
                 if (name == "zh" || name == "zh-CN")
                 {
-                    Init(Resources.cn);
+                    Init(Resources.zh_cn);
                 }
                 else
                 {

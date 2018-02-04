@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Shadowsocks.Properties;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Text;
 
@@ -32,7 +34,7 @@ namespace Shadowsocks.Model
         IPSegment ips = new IPSegment("remoteproxy");
 
         static HostMap instance = new HostMap();
-        const string HOST_FILENAME = "user.rule";
+        const string CUSTOM_USER_RULE_FILE = "custom-user-rule.txt";
 
         public static HostMap Instance()
         {
@@ -127,7 +129,7 @@ namespace Shadowsocks.Model
 
         public bool LoadHostFile()
         {
-            string filename = HOST_FILENAME;
+            string filename = CUSTOM_USER_RULE_FILE;
             string absFilePath = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, filename);
             if (System.IO.File.Exists(absFilePath))
             {
@@ -156,6 +158,19 @@ namespace Shadowsocks.Model
                 }
             }
             return false;
+        }
+
+        internal string GetCustomUserRuleFile()
+        {
+            if (File.Exists(CUSTOM_USER_RULE_FILE))
+            {
+                return CUSTOM_USER_RULE_FILE;
+            }
+            else
+            {
+                File.WriteAllText(CUSTOM_USER_RULE_FILE, Resources.custom_user_rule);
+                return CUSTOM_USER_RULE_FILE;
+            }
         }
     }
 }

@@ -289,10 +289,15 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Data\libsscrypto.dll.gz" />
+    <None Include="Data\libsscrypto64.dll.gz" />
     <None Include="Data\mgwz.dll.gz" />
     <None Include="Data\privoxy.exe.gz" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\proxy.pac.txt.gz" />
+    <None Include="Data\sysproxy.exe.gz" />
+    <None Include="Data\sysproxy64.exe.gz" />
+    <Content Include="Data\custom-user-rule.txt" />
     <None Include="Properties\DataSources\Shadowsocks.View.ConfigForm.datasource" />
     <None Include="Resources\ss20.png" />
     <None Include="Resources\ss16.png" />
@@ -300,7 +305,8 @@
     <None Include="Resources\ssw128.png" />
     <Content Include="Data\zh-CN.txt" />
     <None Include="Data\privoxy_conf.txt" />
-    <Content Include="Data\user-rule.txt" />
+    <Content Include="Data\pac-user-rule.txt" />
+    <Content Include="Data\zh-tw.txt" />
     <Content Include="shadowsocks.ico" />
   </ItemGroup>
   <ItemGroup>

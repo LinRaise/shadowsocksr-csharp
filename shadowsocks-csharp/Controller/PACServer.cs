@@ -16,7 +16,7 @@ namespace Shadowsocks.Controller
     {
         public static string PAC_FILE = "pac.txt";
 
-        public static string USER_RULE_FILE = "user-rule.txt";
+        public static string PAC_USER_RULE_FILE = "pac-user-rule.txt";
 
         public static string USER_ABP_FILE = "abp.txt";
 
@@ -141,19 +141,19 @@ namespace Shadowsocks.Controller
             }
         }
 
-        internal string TouchUserRuleFile()
+        internal string GetPacUserRuleFile()
         {
-            if (File.Exists(USER_RULE_FILE))
+            if (File.Exists(PAC_USER_RULE_FILE))
             {
-                return USER_RULE_FILE;
+                return PAC_USER_RULE_FILE;
             }
             else
             {
-                File.WriteAllText(USER_RULE_FILE, Resources.user_rule);
-                return USER_RULE_FILE;
+                File.WriteAllText(PAC_USER_RULE_FILE, Resources.pac_user_rule);
+                return PAC_USER_RULE_FILE;
             }
         }
-
+        
         private string GetPACContent()
         {
             if (File.Exists(PAC_FILE))
@@ -245,7 +245,7 @@ Connection: Close
             }
             UserRuleFileWatcher = new FileSystemWatcher(Directory.GetCurrentDirectory());
             UserRuleFileWatcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-            UserRuleFileWatcher.Filter = USER_RULE_FILE;
+            UserRuleFileWatcher.Filter = PAC_USER_RULE_FILE;
             UserRuleFileWatcher.Changed += UserRuleFileWatcher_Changed;
             UserRuleFileWatcher.Created += UserRuleFileWatcher_Changed;
             UserRuleFileWatcher.Deleted += UserRuleFileWatcher_Changed;

@@ -20,7 +20,7 @@ namespace Shadowsocks.Controller
 
         private static string PAC_FILE = PACServer.PAC_FILE;
 
-        private static string USER_RULE_FILE = PACServer.USER_RULE_FILE;
+        private static string PAC_USER_RULE_FILE = PACServer.PAC_USER_RULE_FILE;
 
         private static string USER_ABP_FILE = PACServer.USER_ABP_FILE;
 
@@ -81,9 +81,9 @@ namespace Shadowsocks.Controller
                 {
                     throw new Exception("Empty GFWList");
                 }
-                if (File.Exists(USER_RULE_FILE))
+                if (File.Exists(PAC_USER_RULE_FILE))
                 {
-                    string local = File.ReadAllText(USER_RULE_FILE, Encoding.UTF8);
+                    string local = File.ReadAllText(PAC_USER_RULE_FILE, Encoding.UTF8);
                     string[] rules = local.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
                     foreach(string rule in rules)
                     {
