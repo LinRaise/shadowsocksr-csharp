@@ -38,6 +38,8 @@ namespace Shadowsocks.View
             label1.Text = I18N.GetString("URL");
             label2.Text = I18N.GetString("Group name");
             checkBoxAutoUpdate.Text = I18N.GetString("Auto update");
+            buttonDel.Text = I18N.GetString("&Delete");
+            buttonAdd.Text = I18N.GetString("&Add");
             buttonOK.Text = I18N.GetString("OK");
             buttonCancel.Text = I18N.GetString("Cancel");
         }
