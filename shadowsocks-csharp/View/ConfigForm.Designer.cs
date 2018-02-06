@@ -94,7 +94,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.AutoSize = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.Location = new System.Drawing.Point(342, 200);
+            this.panel2.Location = new System.Drawing.Point(433, 200);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(0, 0);
             this.panel2.TabIndex = 1;
@@ -102,8 +102,7 @@
             // DeleteButton
             // 
             this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteButton.Location = new System.Drawing.Point(130, 0);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(0);
+            this.DeleteButton.Location = new System.Drawing.Point(129, 3);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(120, 34);
             this.DeleteButton.TabIndex = 2;
@@ -113,8 +112,7 @@
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(0, 0);
-            this.AddButton.Margin = new System.Windows.Forms.Padding(0);
+            this.AddButton.Location = new System.Drawing.Point(3, 3);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(120, 34);
             this.AddButton.TabIndex = 1;
@@ -126,7 +124,7 @@
             // 
             this.PictureQRcode.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureQRcode.BackColor = System.Drawing.SystemColors.Control;
-            this.PictureQRcode.Location = new System.Drawing.Point(4, 164);
+            this.PictureQRcode.Location = new System.Drawing.Point(4, 165);
             this.PictureQRcode.Margin = new System.Windows.Forms.Padding(4);
             this.PictureQRcode.Name = "PictureQRcode";
             this.PictureQRcode.Size = new System.Drawing.Size(260, 200);
@@ -163,7 +161,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(950, 576);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(952, 579);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // ServerGroupBox
@@ -172,10 +170,10 @@
             this.ServerGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ServerGroupBox.Controls.Add(this.tableLayoutPanel1);
             this.ServerGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ServerGroupBox.Location = new System.Drawing.Point(268, 0);
+            this.ServerGroupBox.Location = new System.Drawing.Point(270, 0);
             this.ServerGroupBox.Margin = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.ServerGroupBox.Name = "ServerGroupBox";
-            this.ServerGroupBox.Size = new System.Drawing.Size(399, 534);
+            this.ServerGroupBox.Size = new System.Drawing.Size(399, 537);
             this.ServerGroupBox.TabIndex = 20;
             this.ServerGroupBox.TabStop = false;
             this.ServerGroupBox.Text = "Server";
@@ -242,7 +240,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(388, 481);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(388, 484);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // ObfsCombo
@@ -257,7 +255,7 @@
             "random_head",
             "tls1.2_ticket_auth",
             "tls1.2_ticket_fastauth"});
-            this.ObfsCombo.Location = new System.Drawing.Point(137, 193);
+            this.ObfsCombo.Location = new System.Drawing.Point(137, 196);
             this.ObfsCombo.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.ObfsCombo.Name = "ObfsCombo";
             this.ObfsCombo.Size = new System.Drawing.Size(245, 23);
@@ -269,7 +267,7 @@
             this.labelObfs.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelObfs.AutoSize = true;
             this.labelObfs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelObfs.Location = new System.Drawing.Point(92, 199);
+            this.labelObfs.Location = new System.Drawing.Point(92, 202);
             this.labelObfs.Name = "labelObfs";
             this.labelObfs.Size = new System.Drawing.Size(39, 15);
             this.labelObfs.TabIndex = 18;
@@ -344,7 +342,7 @@
             // TextLink
             // 
             this.TextLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextLink.Location = new System.Drawing.Point(137, 319);
+            this.TextLink.Location = new System.Drawing.Point(137, 322);
             this.TextLink.Name = "TextLink";
             this.TextLink.ReadOnly = true;
             this.TextLink.Size = new System.Drawing.Size(245, 25);
@@ -356,7 +354,7 @@
             // RemarksTextBox
             // 
             this.RemarksTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemarksTextBox.Location = new System.Drawing.Point(137, 257);
+            this.RemarksTextBox.Location = new System.Drawing.Point(137, 260);
             this.RemarksTextBox.MaxLength = 256;
             this.RemarksTextBox.Name = "RemarksTextBox";
             this.RemarksTextBox.Size = new System.Drawing.Size(245, 25);
@@ -367,7 +365,7 @@
             // 
             this.ObfsUDPLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.ObfsUDPLabel.AutoSize = true;
-            this.ObfsUDPLabel.Location = new System.Drawing.Point(60, 458);
+            this.ObfsUDPLabel.Location = new System.Drawing.Point(60, 461);
             this.ObfsUDPLabel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ObfsUDPLabel.Name = "ObfsUDPLabel";
             this.ObfsUDPLabel.Size = new System.Drawing.Size(71, 15);
@@ -378,7 +376,7 @@
             // CheckObfsUDP
             // 
             this.CheckObfsUDP.AutoSize = true;
-            this.CheckObfsUDP.Location = new System.Drawing.Point(137, 456);
+            this.CheckObfsUDP.Location = new System.Drawing.Point(137, 459);
             this.CheckObfsUDP.Name = "CheckObfsUDP";
             this.CheckObfsUDP.Size = new System.Drawing.Size(165, 19);
             this.CheckObfsUDP.TabIndex = 37;
@@ -391,7 +389,7 @@
             this.TCPProtocolLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.TCPProtocolLabel.AutoSize = true;
             this.TCPProtocolLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.TCPProtocolLabel.Location = new System.Drawing.Point(60, 136);
+            this.TCPProtocolLabel.Location = new System.Drawing.Point(60, 138);
             this.TCPProtocolLabel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TCPProtocolLabel.Name = "TCPProtocolLabel";
             this.TCPProtocolLabel.Size = new System.Drawing.Size(71, 15);
@@ -402,7 +400,7 @@
             // 
             this.UDPoverTCPLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.UDPoverTCPLabel.AutoSize = true;
-            this.UDPoverTCPLabel.Location = new System.Drawing.Point(28, 433);
+            this.UDPoverTCPLabel.Location = new System.Drawing.Point(28, 436);
             this.UDPoverTCPLabel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.UDPoverTCPLabel.Name = "UDPoverTCPLabel";
             this.UDPoverTCPLabel.Size = new System.Drawing.Size(103, 15);
@@ -413,7 +411,7 @@
             // CheckUDPoverUDP
             // 
             this.CheckUDPoverUDP.AutoSize = true;
-            this.CheckUDPoverUDP.Location = new System.Drawing.Point(137, 431);
+            this.CheckUDPoverUDP.Location = new System.Drawing.Point(137, 434);
             this.CheckUDPoverUDP.Name = "CheckUDPoverUDP";
             this.CheckUDPoverUDP.Size = new System.Drawing.Size(245, 19);
             this.CheckUDPoverUDP.TabIndex = 35;
@@ -425,7 +423,7 @@
             // 
             this.LabelNote.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LabelNote.AutoSize = true;
-            this.LabelNote.Location = new System.Drawing.Point(139, 352);
+            this.LabelNote.Location = new System.Drawing.Point(139, 355);
             this.LabelNote.Margin = new System.Windows.Forms.Padding(5);
             this.LabelNote.Name = "LabelNote";
             this.LabelNote.Size = new System.Drawing.Size(239, 15);
@@ -448,7 +446,7 @@
             // 
             this.TCPoverUDPLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.TCPoverUDPLabel.AutoSize = true;
-            this.TCPoverUDPLabel.Location = new System.Drawing.Point(28, 408);
+            this.TCPoverUDPLabel.Location = new System.Drawing.Point(28, 411);
             this.TCPoverUDPLabel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TCPoverUDPLabel.Name = "TCPoverUDPLabel";
             this.TCPoverUDPLabel.Size = new System.Drawing.Size(103, 15);
@@ -459,7 +457,7 @@
             // CheckTCPoverUDP
             // 
             this.CheckTCPoverUDP.AutoSize = true;
-            this.CheckTCPoverUDP.Location = new System.Drawing.Point(137, 406);
+            this.CheckTCPoverUDP.Location = new System.Drawing.Point(137, 409);
             this.CheckTCPoverUDP.Name = "CheckTCPoverUDP";
             this.CheckTCPoverUDP.Size = new System.Drawing.Size(245, 19);
             this.CheckTCPoverUDP.TabIndex = 33;
@@ -491,7 +489,7 @@
             this.labelObfsParam.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelObfsParam.AutoSize = true;
             this.labelObfsParam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelObfsParam.Location = new System.Drawing.Point(44, 231);
+            this.labelObfsParam.Location = new System.Drawing.Point(44, 234);
             this.labelObfsParam.Name = "labelObfsParam";
             this.labelObfsParam.Size = new System.Drawing.Size(87, 15);
             this.labelObfsParam.TabIndex = 20;
@@ -500,7 +498,7 @@
             // TextObfsParam
             // 
             this.TextObfsParam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextObfsParam.Location = new System.Drawing.Point(137, 226);
+            this.TextObfsParam.Location = new System.Drawing.Point(137, 229);
             this.TextObfsParam.Name = "TextObfsParam";
             this.TextObfsParam.Size = new System.Drawing.Size(245, 25);
             this.TextObfsParam.TabIndex = 21;
@@ -509,7 +507,7 @@
             // 
             this.labelGroup.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelGroup.AutoSize = true;
-            this.labelGroup.Location = new System.Drawing.Point(84, 293);
+            this.labelGroup.Location = new System.Drawing.Point(84, 296);
             this.labelGroup.Name = "labelGroup";
             this.labelGroup.Size = new System.Drawing.Size(47, 15);
             this.labelGroup.TabIndex = 24;
@@ -518,7 +516,7 @@
             // TextGroup
             // 
             this.TextGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextGroup.Location = new System.Drawing.Point(137, 288);
+            this.TextGroup.Location = new System.Drawing.Point(137, 291);
             this.TextGroup.MaxLength = 64;
             this.TextGroup.Name = "TextGroup";
             this.TextGroup.Size = new System.Drawing.Size(245, 25);
@@ -528,7 +526,7 @@
             // checkAdvSetting
             // 
             this.checkAdvSetting.AutoSize = true;
-            this.checkAdvSetting.Location = new System.Drawing.Point(6, 350);
+            this.checkAdvSetting.Location = new System.Drawing.Point(6, 353);
             this.checkAdvSetting.Name = "checkAdvSetting";
             this.checkAdvSetting.Size = new System.Drawing.Size(125, 19);
             this.checkAdvSetting.TabIndex = 28;
@@ -540,7 +538,7 @@
             // 
             this.labelUDPPort.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelUDPPort.AutoSize = true;
-            this.labelUDPPort.Location = new System.Drawing.Point(60, 380);
+            this.labelUDPPort.Location = new System.Drawing.Point(60, 383);
             this.labelUDPPort.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelUDPPort.Name = "labelUDPPort";
             this.labelUDPPort.Size = new System.Drawing.Size(71, 15);
@@ -551,7 +549,7 @@
             // NumUDPPort
             // 
             this.NumUDPPort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.NumUDPPort.Location = new System.Drawing.Point(137, 375);
+            this.NumUDPPort.Location = new System.Drawing.Point(137, 378);
             this.NumUDPPort.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -568,7 +566,7 @@
             this.checkSSRLink.AutoSize = true;
             this.checkSSRLink.Checked = true;
             this.checkSSRLink.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkSSRLink.Location = new System.Drawing.Point(38, 322);
+            this.checkSSRLink.Location = new System.Drawing.Point(38, 325);
             this.checkSSRLink.Name = "checkSSRLink";
             this.checkSSRLink.Size = new System.Drawing.Size(93, 19);
             this.checkSSRLink.TabIndex = 26;
@@ -580,7 +578,7 @@
             // 
             this.labelRemarks.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelRemarks.AutoSize = true;
-            this.labelRemarks.Location = new System.Drawing.Point(68, 262);
+            this.labelRemarks.Location = new System.Drawing.Point(68, 265);
             this.labelRemarks.Name = "labelRemarks";
             this.labelRemarks.Size = new System.Drawing.Size(63, 15);
             this.labelRemarks.TabIndex = 22;
@@ -591,7 +589,7 @@
             this.labelProtocolParam.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelProtocolParam.AutoSize = true;
             this.labelProtocolParam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelProtocolParam.Location = new System.Drawing.Point(12, 167);
+            this.labelProtocolParam.Location = new System.Drawing.Point(12, 170);
             this.labelProtocolParam.Name = "labelProtocolParam";
             this.labelProtocolParam.Size = new System.Drawing.Size(119, 15);
             this.labelProtocolParam.TabIndex = 16;
@@ -600,7 +598,7 @@
             // TextProtocolParam
             // 
             this.TextProtocolParam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextProtocolParam.Location = new System.Drawing.Point(137, 162);
+            this.TextProtocolParam.Location = new System.Drawing.Point(137, 165);
             this.TextProtocolParam.Name = "TextProtocolParam";
             this.TextProtocolParam.Size = new System.Drawing.Size(245, 25);
             this.TextProtocolParam.TabIndex = 17;
@@ -633,14 +631,14 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(250, 570);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(252, 573);
             this.tableLayoutPanel7.TabIndex = 16;
             // 
             // LinkUpdate
             // 
             this.LinkUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LinkUpdate.AutoSize = true;
-            this.LinkUpdate.Location = new System.Drawing.Point(37, 458);
+            this.LinkUpdate.Location = new System.Drawing.Point(38, 466);
             this.LinkUpdate.Margin = new System.Windows.Forms.Padding(5);
             this.LinkUpdate.Name = "LinkUpdate";
             this.LinkUpdate.Size = new System.Drawing.Size(175, 15);
@@ -651,6 +649,7 @@
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.AutoSize = true;
             this.tableLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel4.ColumnCount = 2;
@@ -660,21 +659,19 @@
             this.tableLayoutPanel4.Controls.Add(this.UpButton, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.DeleteButton, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.AddButton, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 294);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(250, 68);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(252, 80);
             this.tableLayoutPanel4.TabIndex = 8;
             // 
             // DownButton
             // 
             this.DownButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DownButton.Location = new System.Drawing.Point(130, 34);
-            this.DownButton.Margin = new System.Windows.Forms.Padding(0);
+            this.DownButton.Location = new System.Drawing.Point(129, 43);
             this.DownButton.Name = "DownButton";
             this.DownButton.Size = new System.Drawing.Size(120, 34);
             this.DownButton.TabIndex = 4;
@@ -684,8 +681,7 @@
             // 
             // UpButton
             // 
-            this.UpButton.Location = new System.Drawing.Point(0, 34);
-            this.UpButton.Margin = new System.Windows.Forms.Padding(0);
+            this.UpButton.Location = new System.Drawing.Point(3, 43);
             this.UpButton.Name = "UpButton";
             this.UpButton.Size = new System.Drawing.Size(120, 34);
             this.UpButton.TabIndex = 3;
@@ -700,18 +696,18 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel5.Controls.Add(this.PictureQRcode, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(679, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(681, 3);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(12, 3, 3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(268, 528);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(268, 531);
             this.tableLayoutPanel5.TabIndex = 17;
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.tableLayoutPanel3.AutoSize = true;
             this.tableLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -719,12 +715,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.MyCancelButton, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.OKButton, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(259, 537);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(347, 540);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(408, 36);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(322, 36);
             this.tableLayoutPanel3.TabIndex = 14;
             // 
             // MyCancelButton
@@ -732,7 +728,7 @@
             this.MyCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MyCancelButton.AutoSize = true;
             this.MyCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.MyCancelButton.Location = new System.Drawing.Point(253, 3);
+            this.MyCancelButton.Location = new System.Drawing.Point(167, 3);
             this.MyCancelButton.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.MyCancelButton.Name = "MyCancelButton";
             this.MyCancelButton.Size = new System.Drawing.Size(155, 33);
@@ -761,7 +757,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(796, 564);
+            this.ClientSize = new System.Drawing.Size(978, 610);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
