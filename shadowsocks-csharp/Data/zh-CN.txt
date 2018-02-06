@@ -118,6 +118,7 @@ TTL=空闲断开秒数
 OK=确定
 Cancel=取消
 
+Set Default=恢复默认设置
 # ServerLog Form
 
 ServerLog=服务器记录

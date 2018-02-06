@@ -91,7 +91,7 @@ namespace Shadowsocks.View
             LabelS5Password.Text = I18N.GetString("Password");
             LabelAuthUser.Text = I18N.GetString("Username");
             LabelAuthPass.Text = I18N.GetString("Password");
-
+            buttonDefault.Text = I18N.GetString("Set Default");
             LabelRandom.Text = I18N.GetString("Balance");
             for (int i = 0; i < comboProxyType.Items.Count; ++i)
             {

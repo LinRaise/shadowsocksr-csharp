@@ -74,23 +74,23 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(684, 325);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(802, 317);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // listPorts
             // 
             this.listPorts.FormattingEnabled = true;
-            this.listPorts.ItemHeight = 12;
+            this.listPorts.ItemHeight = 15;
             this.listPorts.Location = new System.Drawing.Point(3, 3);
             this.listPorts.Name = "listPorts";
-            this.listPorts.Size = new System.Drawing.Size(144, 244);
+            this.listPorts.Size = new System.Drawing.Size(249, 259);
             this.listPorts.TabIndex = 0;
             this.listPorts.SelectedIndexChanged += new System.EventHandler(this.listPorts_SelectedIndexChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
-            this.groupBox1.Location = new System.Drawing.Point(153, 3);
+            this.groupBox1.Location = new System.Drawing.Point(261, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(531, 255);
             this.groupBox1.TabIndex = 2;
@@ -127,16 +127,16 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(515, 223);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(518, 228);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // labelType
             // 
             this.labelType.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(45, 29);
+            this.labelType.Location = new System.Drawing.Point(59, 32);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(29, 12);
+            this.labelType.Size = new System.Drawing.Size(39, 15);
             this.labelType.TabIndex = 0;
             this.labelType.Text = "Type";
             // 
@@ -144,9 +144,9 @@
             // 
             this.labelID.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(15, 55);
+            this.labelID.Location = new System.Drawing.Point(19, 61);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(59, 12);
+            this.labelID.Size = new System.Drawing.Size(79, 15);
             this.labelID.TabIndex = 0;
             this.labelID.Text = "Server ID";
             // 
@@ -154,9 +154,9 @@
             // 
             this.labelAddr.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelAddr.AutoSize = true;
-            this.labelAddr.Location = new System.Drawing.Point(3, 108);
+            this.labelAddr.Location = new System.Drawing.Point(3, 122);
             this.labelAddr.Name = "labelAddr";
-            this.labelAddr.Size = new System.Drawing.Size(71, 12);
+            this.labelAddr.Size = new System.Drawing.Size(95, 15);
             this.labelAddr.TabIndex = 0;
             this.labelAddr.Text = "Target Addr";
             // 
@@ -164,39 +164,39 @@
             // 
             this.labelPort.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelPort.AutoSize = true;
-            this.labelPort.Location = new System.Drawing.Point(3, 135);
+            this.labelPort.Location = new System.Drawing.Point(3, 153);
             this.labelPort.Name = "labelPort";
-            this.labelPort.Size = new System.Drawing.Size(71, 12);
+            this.labelPort.Size = new System.Drawing.Size(95, 15);
             this.labelPort.TabIndex = 0;
             this.labelPort.Text = "Target Port";
             // 
             // checkEnable
             // 
             this.checkEnable.AutoSize = true;
-            this.checkEnable.Location = new System.Drawing.Point(80, 3);
+            this.checkEnable.Location = new System.Drawing.Point(104, 3);
             this.checkEnable.Name = "checkEnable";
-            this.checkEnable.Size = new System.Drawing.Size(60, 16);
+            this.checkEnable.Size = new System.Drawing.Size(77, 19);
             this.checkEnable.TabIndex = 3;
             this.checkEnable.Text = "Enable";
             this.checkEnable.UseVisualStyleBackColor = true;
             // 
             // textAddr
             // 
-            this.textAddr.Location = new System.Drawing.Point(80, 104);
+            this.textAddr.Location = new System.Drawing.Point(104, 117);
             this.textAddr.Name = "textAddr";
-            this.textAddr.Size = new System.Drawing.Size(403, 21);
+            this.textAddr.Size = new System.Drawing.Size(403, 25);
             this.textAddr.TabIndex = 7;
             // 
             // NumTargetPort
             // 
-            this.NumTargetPort.Location = new System.Drawing.Point(80, 131);
+            this.NumTargetPort.Location = new System.Drawing.Point(104, 148);
             this.NumTargetPort.Maximum = new decimal(new int[] {
             65535,
             0,
             0,
             0});
             this.NumTargetPort.Name = "NumTargetPort";
-            this.NumTargetPort.Size = new System.Drawing.Size(403, 21);
+            this.NumTargetPort.Size = new System.Drawing.Size(403, 25);
             this.NumTargetPort.TabIndex = 8;
             // 
             // comboBoxType
@@ -207,9 +207,9 @@
             "Port Forward",
             "Force Proxy",
             "Proxy With Rule"});
-            this.comboBoxType.Location = new System.Drawing.Point(80, 25);
+            this.comboBoxType.Location = new System.Drawing.Point(104, 28);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(403, 20);
+            this.comboBoxType.Size = new System.Drawing.Size(403, 23);
             this.comboBoxType.TabIndex = 4;
             this.comboBoxType.SelectedIndexChanged += new System.EventHandler(this.comboBoxType_SelectedIndexChanged);
             // 
@@ -217,68 +217,71 @@
             // 
             this.comboServers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboServers.FormattingEnabled = true;
-            this.comboServers.Location = new System.Drawing.Point(80, 51);
+            this.comboServers.Location = new System.Drawing.Point(104, 57);
             this.comboServers.Name = "comboServers";
-            this.comboServers.Size = new System.Drawing.Size(403, 20);
+            this.comboServers.Size = new System.Drawing.Size(403, 23);
             this.comboServers.TabIndex = 5;
             // 
             // labelLocal
             // 
             this.labelLocal.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelLocal.AutoSize = true;
-            this.labelLocal.Location = new System.Drawing.Point(9, 81);
+            this.labelLocal.Location = new System.Drawing.Point(11, 91);
             this.labelLocal.Name = "labelLocal";
-            this.labelLocal.Size = new System.Drawing.Size(65, 12);
+            this.labelLocal.Size = new System.Drawing.Size(87, 15);
             this.labelLocal.TabIndex = 0;
             this.labelLocal.Text = "Local Port";
             // 
             // NumLocalPort
             // 
-            this.NumLocalPort.Location = new System.Drawing.Point(80, 77);
+            this.NumLocalPort.Location = new System.Drawing.Point(104, 86);
             this.NumLocalPort.Maximum = new decimal(new int[] {
             65535,
             0,
             0,
             0});
             this.NumLocalPort.Name = "NumLocalPort";
-            this.NumLocalPort.Size = new System.Drawing.Size(403, 21);
+            this.NumLocalPort.Size = new System.Drawing.Size(403, 25);
             this.NumLocalPort.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 162);
+            this.label1.Location = new System.Drawing.Point(35, 184);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 12);
+            this.label1.Size = new System.Drawing.Size(63, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Remarks";
             // 
             // textRemarks
             // 
-            this.textRemarks.Location = new System.Drawing.Point(80, 158);
+            this.textRemarks.Location = new System.Drawing.Point(104, 179);
             this.textRemarks.Name = "textRemarks";
-            this.textRemarks.Size = new System.Drawing.Size(403, 21);
+            this.textRemarks.Size = new System.Drawing.Size(403, 25);
             this.textRemarks.TabIndex = 9;
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.AutoSize = true;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.OKButton, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.MyCancelButton, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(153, 264);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(422, 268);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(490, 54);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(360, 41);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // OKButton
             // 
             this.OKButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.OKButton.Location = new System.Drawing.Point(46, 3);
+            this.OKButton.Location = new System.Drawing.Point(14, 3);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(152, 35);
             this.OKButton.TabIndex = 10;
@@ -289,7 +292,8 @@
             // MyCancelButton
             // 
             this.MyCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.MyCancelButton.Location = new System.Drawing.Point(291, 3);
+            this.MyCancelButton.Location = new System.Drawing.Point(183, 3);
+            this.MyCancelButton.Margin = new System.Windows.Forms.Padding(3, 3, 25, 3);
             this.MyCancelButton.Name = "MyCancelButton";
             this.MyCancelButton.Size = new System.Drawing.Size(152, 35);
             this.MyCancelButton.TabIndex = 11;
@@ -299,24 +303,26 @@
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.AutoSize = true;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.Add, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.Del, 0, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 264);
+            this.tableLayoutPanel4.Controls.Add(this.Del, 1, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 268);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(144, 54);
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(252, 40);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // Add
             // 
             this.Add.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Add.Location = new System.Drawing.Point(22, 3);
+            this.Add.Location = new System.Drawing.Point(3, 3);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(100, 21);
+            this.Add.Size = new System.Drawing.Size(120, 34);
             this.Add.TabIndex = 1;
             this.Add.Text = "&Add";
             this.Add.UseVisualStyleBackColor = true;
@@ -325,9 +331,9 @@
             // Del
             // 
             this.Del.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Del.Location = new System.Drawing.Point(22, 30);
+            this.Del.Location = new System.Drawing.Point(129, 3);
             this.Del.Name = "Del";
-            this.Del.Size = new System.Drawing.Size(100, 21);
+            this.Del.Size = new System.Drawing.Size(120, 34);
             this.Del.TabIndex = 2;
             this.Del.Text = "&Delete";
             this.Del.UseVisualStyleBackColor = true;
@@ -338,7 +344,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(727, 489);
+            this.ClientSize = new System.Drawing.Size(831, 346);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "PortSettingsForm";
@@ -346,6 +352,7 @@
             this.Text = "Port Settings";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PortMapForm_FormClosed);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
