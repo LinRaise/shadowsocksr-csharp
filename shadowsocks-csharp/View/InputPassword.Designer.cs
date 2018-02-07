@@ -30,48 +30,51 @@
         {
             this.textPassword = new System.Windows.Forms.TextBox();
             this.buttonOK = new System.Windows.Forms.Button();
-            this.label_info = new System.Windows.Forms.Label();
+            this.pwdLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textPassword
             // 
             this.textPassword.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textPassword.Location = new System.Drawing.Point(41, 44);
+            this.textPassword.Location = new System.Drawing.Point(113, 23);
+            this.textPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(330, 21);
+            this.textPassword.Size = new System.Drawing.Size(215, 25);
             this.textPassword.TabIndex = 0;
             this.textPassword.UseSystemPasswordChar = true;
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(131, 76);
+            this.buttonOK.Location = new System.Drawing.Point(139, 56);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(151, 28);
+            this.buttonOK.Size = new System.Drawing.Size(189, 35);
             this.buttonOK.TabIndex = 1;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
-            // label_info
+            // pwdLabel
             // 
-            this.label_info.AutoSize = true;
-            this.label_info.Location = new System.Drawing.Point(24, 26);
-            this.label_info.Name = "label_info";
-            this.label_info.Size = new System.Drawing.Size(350, 15);
-            this.label_info.TabIndex = 2;
-            this.label_info.Text = "Parse gui-config.json error, maybe require password to decrypt";
+            this.pwdLabel.AutoSize = true;
+            this.pwdLabel.Location = new System.Drawing.Point(34, 26);
+            this.pwdLabel.Name = "pwdLabel";
+            this.pwdLabel.Size = new System.Drawing.Size(72, 17);
+            this.pwdLabel.TabIndex = 3;
+            this.pwdLabel.Text = "password";
             // 
             // InputPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(412, 119);
-            this.Controls.Add(this.label_info);
+            this.ClientSize = new System.Drawing.Size(339, 104);
+            this.Controls.Add(this.pwdLabel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.textPassword);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InputPassword";
@@ -88,6 +91,6 @@
 
         private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.Button buttonOK;
-        private System.Windows.Forms.Label label_info;
+        private System.Windows.Forms.Label pwdLabel;
     }
 }
