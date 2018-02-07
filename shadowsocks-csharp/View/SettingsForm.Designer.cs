@@ -147,7 +147,7 @@
             // 
             // RandomComboBox
             // 
-            this.RandomComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RandomComboBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.RandomComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RandomComboBox.FormattingEnabled = true;
             this.RandomComboBox.Items.AddRange(new object[] {
@@ -157,7 +157,7 @@
             "LowException",
             "SelectedFirst",
             "Timer"});
-            this.RandomComboBox.Location = new System.Drawing.Point(88, 53);
+            this.RandomComboBox.Location = new System.Drawing.Point(72, 53);
             this.RandomComboBox.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.RandomComboBox.Name = "RandomComboBox";
             this.RandomComboBox.Size = new System.Drawing.Size(147, 23);
