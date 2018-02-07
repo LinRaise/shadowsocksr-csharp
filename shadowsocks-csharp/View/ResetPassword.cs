@@ -18,6 +18,14 @@ namespace Shadowsocks.View
             InitializeComponent();
             this.Icon = Icon.FromHandle(Resources.ssw128.GetHicon());
             this.Text = I18N.GetString("ResetPassword");
+            this.DescLabel.Text = I18N.GetString("ResetPasword Desc");
+            this.OldPasswordLabel.Text = I18N.GetString("OldPassword");
+            this.NewPasswordLabel.Text = I18N.GetString("NewPassword");
+            this.ConfirmPasswordLabel.Text = I18N.GetString("ConfirmPassword");
+  //          ResetPasword Desc = 如果无密码，栏位为为空
+  //OldPassword = 旧密码
+//NewPassword = 新密码
+//ConfirmPassword = 确认密码
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
