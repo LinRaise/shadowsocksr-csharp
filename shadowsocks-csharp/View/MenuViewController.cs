@@ -1405,7 +1405,7 @@ namespace Shadowsocks.View
 
         void showURLFromQRCode()
         {
-            ShowTextForm dlg = new ShowTextForm("QRCode", _urlToOpen);
+            ShowTextForm dlg = new ShowTextForm(I18N.GetString("QRCode"), _urlToOpen);
             dlg.Show();
             dlg.Activate();
             dlg.BringToFront();
